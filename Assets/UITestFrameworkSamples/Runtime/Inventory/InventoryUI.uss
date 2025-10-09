@@ -1,0 +1,229 @@
+/* コンテナ */
+.inventory-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #2a2a3e;
+    flex-direction: column;
+}
+
+/* ヘッダー */
+.header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    background-color: #1a1a2e;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 2px solid #4a5568;
+}
+
+.inventory-title {
+    font-size: 28px;
+    color: #ffffff;
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+}
+
+.close-button {
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    background-color: transparent;
+    border-width: 0;
+    color: #9ca3af;
+}
+
+.close-button:hover {
+    color: #ffffff;
+    background-color: rgba(239, 68, 68, 0.3);
+    border-radius: 8px;
+}
+
+/* コンテンツエリア */
+.content {
+    flex-direction: row;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* アイテムグリッド */
+.item-grid-container {
+    flex: 2;
+    margin-right: 20px;
+    flex-direction: column;
+}
+
+.section-title {
+    font-size: 20px;
+    color: #9ca3af;
+    margin-bottom: 15px;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+}
+
+.item-scroll {
+    flex-grow: 1;
+}
+
+.item-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* アイテムスロット */
+.item-slot {
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    background-color: #374151;
+    border-width: 2px;
+    border-color: #4b5563;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.item-slot:hover {
+    border-color: #60a5fa;
+    background-color: #4b5563;
+}
+
+.item-slot:active {
+    scale: 0.95;
+}
+
+.item-slot.selected {
+    border-color: #3b82f6;
+    border-width: 3px;
+    background-color: #1e3a8a;
+}
+
+.empty-slot {
+    background-color: #1f2937;
+    border-style: dashed;
+}
+
+.item-label {
+    font-size: 14px;
+    color: #ffffff;
+    -unity-text-align: middle-center;
+}
+
+/* アイテム詳細 */
+.item-detail {
+    flex: 1;
+    background-color: #1f2937;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.detail-content {
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.item-name {
+    font-size: 24px;
+    color: #ffffff;
+    -unity-font-style: bold;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #374151;
+}
+
+.item-description {
+    font-size: 16px;
+    color: #d1d5db;
+    line-height: 1.5;
+    white-space: normal;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+/* アクションボタン */
+.action-buttons {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: auto;
+}
+
+.action-button {
+    width: 120px;
+    height: 45px;
+    font-size: 18px;
+    -unity-font-style: bold;
+    border-radius: 8px;
+    border-width: 2px;
+}
+
+.use-button {
+    background-color: #059669;
+    border-color: #10b981;
+    color: #ffffff;
+}
+
+.use-button:hover {
+    background-color: #10b981;
+}
+
+.use-button:disabled {
+    background-color: #374151;
+    border-color: #4b5563;
+    color: #6b7280;
+}
+
+.discard-button {
+    background-color: #dc2626;
+    border-color: #ef4444;
+    color: #ffffff;
+}
+
+.discard-button:hover {
+    background-color: #ef4444;
+}
+
+.discard-button:disabled {
+    background-color: #374151;
+    border-color: #4b5563;
+    color: #6b7280;
+}
+
+/* フィールドアイテムセクション */
+.field-items-section {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #4b5563;
+    align-items: center;
+}
+
+.field-items-title {
+    font-size: 16px;
+    color: #9ca3af;
+    margin-bottom: 12px;
+    -unity-font-style: bold;
+}
+
+.pickup-button {
+    width: 200px;
+    height: 45px;
+    font-size: 18px;
+    -unity-font-style: bold;
+    border-radius: 8px;
+    border-width: 2px;
+    background-color: #2563eb;
+    border-color: #3b82f6;
+    color: #ffffff;
+}
+
+.pickup-button:hover {
+    background-color: #3b82f6;
+}
+
+.pickup-button:active {
+    scale: 0.95;
+}

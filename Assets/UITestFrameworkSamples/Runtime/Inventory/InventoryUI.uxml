@@ -1,0 +1,66 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:Style src="InventoryUI.uss" />
+    <ui:VisualElement name="inventory-container" class="inventory-container">
+        <!-- ヘッダー -->
+        <ui:VisualElement name="header" class="header">
+            <ui:Label name="inventory-title" text="Inventory" class="inventory-title" />
+            <ui:Button name="close-button" text="×" class="close-button" />
+        </ui:VisualElement>
+
+        <!-- メインコンテンツ -->
+        <ui:VisualElement name="content" class="content">
+            <!-- アイテムグリッド -->
+            <ui:VisualElement name="item-grid-container" class="item-grid-container">
+                <ui:Label name="grid-title" text="Items" class="section-title" />
+                <ui:ScrollView name="item-scroll" class="item-scroll">
+                    <ui:VisualElement name="item-grid" class="item-grid">
+                        <!-- アイテムスロット（8個） -->
+                        <ui:Button name="item-slot-0" class="item-slot empty-slot">
+                            <ui:Label name="item-label-0" class="item-label" />
+                        </ui:Button>
+                        <ui:Button name="item-slot-1" class="item-slot empty-slot">
+                            <ui:Label name="item-label-1" class="item-label" />
+                        </ui:Button>
+                        <ui:Button name="item-slot-2" class="item-slot empty-slot">
+                            <ui:Label name="item-label-2" class="item-label" />
+                        </ui:Button>
+                        <ui:Button name="item-slot-3" class="item-slot empty-slot">
+                            <ui:Label name="item-label-3" class="item-label" />
+                        </ui:Button>
+                        <ui:Button name="item-slot-4" class="item-slot empty-slot">
+                            <ui:Label name="item-label-4" class="item-label" />
+                        </ui:Button>
+                        <ui:Button name="item-slot-5" class="item-slot empty-slot">
+                            <ui:Label name="item-label-5" class="item-label" />
+                        </ui:Button>
+                        <ui:Button name="item-slot-6" class="item-slot empty-slot">
+                            <ui:Label name="item-label-6" class="item-label" />
+                        </ui:Button>
+                        <ui:Button name="item-slot-7" class="item-slot empty-slot">
+                            <ui:Label name="item-label-7" class="item-label" />
+                        </ui:Button>
+                    </ui:VisualElement>
+                </ui:ScrollView>
+
+                <!-- フィールドアイテム -->
+                <ui:VisualElement name="field-items-section" class="field-items-section">
+                    <ui:Label text="Field Items" class="field-items-title" />
+                    <ui:Button name="pickup-button" text="Pick Up" class="pickup-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <!-- アイテム詳細 -->
+            <ui:VisualElement name="item-detail" class="item-detail">
+                <ui:Label name="detail-title" text="Item Details" class="section-title" />
+                <ui:VisualElement name="detail-content" class="detail-content">
+                    <ui:Label name="item-name" text="No item selected" class="item-name" />
+                    <ui:Label name="item-description" text="" class="item-description" />
+                    <ui:VisualElement name="action-buttons" class="action-buttons">
+                        <ui:Button name="use-button" text="Use" class="action-button use-button" />
+                        <ui:Button name="discard-button" text="Discard" class="action-button discard-button" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
